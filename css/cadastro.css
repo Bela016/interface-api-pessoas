@@ -1,0 +1,92 @@
+/*#3E671D
+#86B262
+#C1FFB0
+#3E671D
+#074723*/
+:root {
+    --cor1: #3E671D;
+    --cor2: #86B262;
+    --cor3: #C1FFB0;
+    --cor4: #3E671D;
+    --cor5: #074723;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+*{
+    background-color:#86B262 ;
+    border: none;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+.esquerda {
+    width: 40%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.direita{
+    width: 60%;
+    background-color: #c1ffb0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mb-3{
+    background-color: #86B262;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #074723!important;
+    background-color: var(--cor3)!important;
+}
+
+.logotipo {
+    width: 70%;
+    height: 50%;
+
+    margin: 0 auto;
+}
+h3{
+    text-align: center;
+    color: #074723;
+    background-color: var(--cor3);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+button{
+    background-color: #3E671D;
+    border-radius:10px;
+    align-items: center;
+    color: #c1ffb0;
+
+}
+
+#exampleFormControlInput1 {
+    width: 70%;
+
+    margin: 0 auto;
+
+    background-color: var(--cor2);
+}
+
+button {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.info {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--cor3);
+}
