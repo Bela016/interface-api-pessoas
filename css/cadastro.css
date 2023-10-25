@@ -69,7 +69,7 @@ button{
 
 }
 
-#exampleFormControlInput1 {
+#idnome,#idcpf,#idnascimento,#idtelefone,#idendereço,#idaltura,#idpeso {
     width: 70%;
 
     margin: 0 auto;
