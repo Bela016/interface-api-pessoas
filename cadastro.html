@@ -25,32 +25,41 @@
         <img class="logotipo" src="saude.png" alt="saude">
     </div>
 
+
     <div class="direita">
         <div class="info">
-            <h3>Cadastro</h3>
-            <!-- Content here -->
-            <div class="mb-3">
-                <input type="text" class="form-control" id="idnome" placeholder="Nome">
-            </div>
-            <div class="mb-3">
-                <input type="number" class="form-control" id="idcpf" placeholder="CPF">
-            </div>
-            <div class="mb-3">
-                <input type="date" class="form-control" id="idnascimento" placeholder="Data de Nascimento">
-            </div>
-            <div class="mb-3">
-                <input type="number" class="form-control" id="idtelefone" placeholder="telefone">
-            </div>
-            <div class="mb-3">
-                <input type="text" class="form-control" id="idendereço" placeholder="endereço">
-            </div>
-            <div class="mb-3">
-                <input type="number" class="form-control" id="idaltura" placeholder="altura">
-            </div>
-            <div class="mb-3">
-                <input type="number" class="form-control" id="idpeso" placeholder="peso">
-            </div>
-            <button id="cadastro" onclick="alerta()">Cadastrar</button>
+            <form class="info">
+                <h3>Cadastro</h3>
+                <!-- Content here -->
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="idnome" placeholder="Nome" required minlength="3"
+                        maxlength="50">
+                </div>
+                <div class="mb-3">
+                    <input type="number" class="form-control" id="idcpf" placeholder="CPF" required minlength="11"
+                        maxlength="11">
+                </div>
+                <div class="mb-3">
+                    <input type="date" class="form-control" id="idnascimento" placeholder="Data de Nascimento" required>
+                </div>
+                <div class="mb-3">
+                    <input type="number" class="form-control" id="idtelefone" placeholder="telefone" required
+                        minlength="9" maxlength="9">
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="idendereço" placeholder="endereço" required
+                        minlength="3" maxlength="50">
+                </div>
+                <div class="mb-3">
+                    <input type="number" class="form-control" id="idaltura" placeholder="altura" required minlength="3"
+                        maxlength="3">
+                </div>
+                <div class="mb-3">
+                    <input type="number" class="form-control" id="idpeso" placeholder="peso" required minlength="3"
+                        maxlength="3">
+                </div>
+                <button type="submit" id="cadastro" onclick="alerta()">Cadastrar</button>
+            </form>
         </div>
     </div>
     <script src="js/cadastro.js"></script>
